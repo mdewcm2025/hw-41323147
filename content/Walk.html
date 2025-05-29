@@ -146,29 +146,36 @@ img.add_border {
 <p><a href="https://s104.cycu.org/reeborg">https://s104.cycu.org/reeborg</a><span> 在 Other worlds 下方點選 Alone 後, 按下 run 執行下列程式:</span></p>
 <div>
 <div class="syntaxhighlighter js" id="highlighter_119995">
-<table border="0" cellpadding="0" cellspacing="0">
+<table border="0" cellpadding="0" cellspacing="0" style="width: 343.388px;">
 <tbody>
 <tr>
-<td class="gutter">
-<div class="line number1 index0 alt2">1</div>
-<div class="line number2 index1 alt1">2</div>
-<div class="line number3 index2 alt2">3</div>
+<td class="gutter" style="width: 13px;">
+<div class="line number4 index3 alt1">1</div>
+<div class="line number4 index3 alt1">2</div>
+<div class="line number4 index3 alt1">3</div>
 <div class="line number4 index3 alt1">4</div>
+<div class="line number4 index3 alt1">5</div>
+<div class="line number4 index3 alt1">6</div>
+<div class="line number4 index3 alt1">7</div>
+<div class="line number4 index3 alt1">8</div>
+<div class="line number4 index3 alt1">9</div>
+<div class="line number4 index3 alt1">10</div>
+<div class="line number4 index3 alt1">11</div>
+<div class="line number4 index3 alt1">12</div>
+<div class="line number4 index3 alt1">13</div>
+<div class="line number4 index3 alt1"></div>
 </td>
-<td class="code">
+<td class="code" style="width: 324.388px;">
 <div class="container">
-<div class="line number1 index0 alt2"><code class="js keyword">for</code> <code class="js plain">i </code><code class="js keyword">in</code> <code class="js plain">range(4):</code></div>
-<div class="line number2 index1 alt1"><code class="js spaces">    </code><code class="js keyword">for</code> <code class="js plain">j </code><code class="js keyword">in</code> <code class="js plain">range(8):</code></div>
-<div class="line number3 index2 alt2"><code class="js spaces">        </code><code class="js plain">move()</code></div>
-<div class="line number4 index3 alt1"><code class="js spaces">    </code><code class="js plain">turn_left()</code></div>
+<div class="line number1 index0 alt2"><code class="js keyword">def turn_right():<br/> for _ in range(3):<br/> turn_left()<br/><br/># 初始邊長，可以根據世界大小調整<br/>side_length = 10<br/><br/>while side_length &gt; 0:<br/> for _ in range(2): # 每次走兩邊，然後縮短邊長<br/> for _ in range(side_length - 1):<br/> move()<br/> turn_left()<br/> side_length -= 1 # 每完成一個轉角（兩邊），邊長縮短 1<br/> <br/></code></div>
 </div>
 </td>
 </tr>
 </tbody>
 </table>
+<img alt="" height="578" src="./../images/chrome_SidUjnfMOf.gif" width="576"/></div>
 </div>
-</div>
-<p><img alt="" height="578" src="./../images/chrome_G72XVWqyjt.gif" width="578"/></p><br />Reeborg << <a href='Reeborg.html'>Previous</a> <a href='Tutorial.html'>Next</a> >> Tutorial</div>
+<br />Reeborg << <a href='Reeborg.html'>Previous</a> <a href='Tutorial.html'>Next</a> >> Tutorial</div>
         
     <!-- footer -->
       <div class="container">
