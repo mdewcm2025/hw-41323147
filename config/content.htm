@@ -55,11 +55,12 @@
 <li>利用 <a href="http://localhost/reeborg/?lang=en&amp;mode=python&amp;menu=/reeborg/worlds/menus/select_collection_en.json&amp;name=Alone&amp;url=/reeborg/worlds/tutorial_en/harvest1.json&amp;editor=https://mdewcm2025.github.io/hw-scrum-1/python/harvest1.py">http://localhost/reeborg/?lang=en&amp;mode=python&amp;menu=/reeborg/worlds/menus/select_collection_en.json&amp;name=Alone&amp;url=/reeborg/worlds/tutorial_en/harvest1.json&amp;editor=https://mdewcm2025.github.io/hw-scrum-1/python/harvest1.py</a> 進行測試.</li>
 <li>就機械設計的專業而言, 之後可以用來開發類似: <a href="https://github.com/youandvern/efficalc">https://github.com/youandvern/efficalc</a> </li>
 </ol>
-<p><span>成功使用nginx建立建立全球資訊網伺服器，並可以執行拔蘿蔔程式<img alt="laughing" src="https://mdewcm2025.github.io/hw-kevingg601/cmsimde/static/tinymce4/tinymce/plugins/emoticons/img/smiley-laughing.gif"/></span></p>
-<p><span><img alt="" height="429" src="/images/chrome_wTSht3rdSV.png" width="800"/>外加一張使用w10.mde.nfu.edu.tw進入nginx的圖片</span></p>
+<p><span>成功使用nginx建立建立全球資訊網伺服器，並可以執行拔蘿蔔程式</span></p>
+<p><span><img alt="" height="384" src="/images/chrome_LhkJ1mT1Fj.png" width="800"/>外加一張使用w10.mde.nfu.edu.tw進入nginx的圖片</span></p>
 <p><img alt="" height="269" src="https://mdewcm2025.github.io/hw-kevingg601/images/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202025-05-15%20110746.png" width="800"/></p>
 <p></p>
-<p style="padding-left: 60px;"></p><h2>HW2</h2>
+<p style="padding-left: 60px;"></p>
+<h2>HW2</h2>
 <p>作業二 (20%): 在各種不同環境下的操作系統中配置 <a href="https://mde.tw/reeborg/world.html">Reeborg's world</a> (<a href="https://github.com/mdecycu/reeborg">原始碼</a>)</p>
 <h1>Reeborg</h1>
 <p><span>呼叫伺服器 python 目錄中的 harvest1.py:</span></p>
@@ -67,7 +68,8 @@
 <p></p>
 <p></p>
 <p><span>呼叫外部伺服器中的 harvest1.py:</span></p>
-<p><a href="https://mdewcm2025.github.io/hw-QIU0908/reeborg/?lang=en&amp;mode=python&amp;menu=/hwQIU0908/reeborg/worlds/menus/select_collection_en.json&amp;name=Alone&amp;url=/hw-QIU0908/reeborg/worlds/tutorial_en/harvest1.json&amp;editor=https://mdewcm2025.github.io/hw-qiu0908/python/harvest1.py">https://mdewcm2025.github.io/hw-QIU0908/reeborg/?lang=en&amp;mode=python&amp;menu=/hwQIU0908/reeborg/worlds/menus/select_collection_en.json&amp;name=Alone&amp;url=/hw-QIU0908/reeborg/worlds/tutorial_en/harvest1.json&amp;editor=https://mdewcm2025.github.io/hw-qiu0908/python/harvest1.py</a></p><h2>Walk</h2>
+<p><a href="https://mdewcm2025.github.io/hw-QIU0908/reeborg/?lang=en&amp;mode=python&amp;menu=/hwQIU0908/reeborg/worlds/menus/select_collection_en.json&amp;name=Alone&amp;url=/hw-QIU0908/reeborg/worlds/tutorial_en/harvest1.json&amp;editor=https://mdewcm2025.github.io/hw-qiu0908/python/harvest1.py">https://mdewcm2025.github.io/hw-QIU0908/reeborg/?lang=en&amp;mode=python&amp;menu=/hwQIU0908/reeborg/worlds/menus/select_collection_en.json&amp;name=Alone&amp;url=/hw-QIU0908/reeborg/worlds/tutorial_en/harvest1.json&amp;editor=https://mdewcm2025.github.io/hw-qiu0908/python/harvest1.py</a></p>
+<h2>Walk</h2>
 <p><a href="https://s104.cycu.org/reeborg">https://s104.cycu.org/reeborg</a><span> 在 Other worlds 下方點選 Alone 後, 按下 run 執行下列程式:</span></p>
 <div>
 <div class="syntaxhighlighter js" id="highlighter_119995">
@@ -99,8 +101,17 @@
 </tbody>
 </table>
 <img alt="" height="578" src="/images/chrome_SidUjnfMOf.gif" width="576"/></div>
-<div class="syntaxhighlighter js">1</div>
-</div><h2>Tutorial</h2>
+<h2 class="syntaxhighlighter js">carrot</h2>
+<p>將蘿蔔田的蘿蔔拔完後</p>
+<p>def 拔蘿蔔():<br/> if object_here():<br/> take()</p>
+<p>def 拔一排():<br/> for i in range(8): # 每排 8 格<br/> 拔蘿蔔()<br/> if front_is_clear() and i &lt; 7:<br/> move()</p>
+<p>def 轉向右():<br/> turn_left()<br/> turn_left()<br/> turn_left()</p>
+<p>def 之字型拔蘿蔔():<br/> for row in range(6): # 共 6 排<br/> 拔一排()<br/> if row &lt; 5: # 最後一排不用轉<br/> if row % 2 == 0:<br/> turn_left()<br/> move()<br/> turn_left()<br/> else:<br/> 轉向右()<br/> move()<br/> 轉向右()</p>
+<p># === 起始動作 ===</p>
+<p># 目前位置：(2,6)，面朝東<br/>move() # 到 (3,6)<br/>turn_left() # 面朝北<br/>move()<br/>move() # 到 (3,8)<br/>轉向右() # 面朝東</p>
+<p># 開始拔蘿蔔（包括 x=8 那一列）<br/>之字型拔蘿蔔()<img alt="" height="580" src="/images/chrome_YQxMRXtV7c.gif" width="577"/></p>
+</div>
+<h2>Tutorial</h2>
 <p><a href="https://aroberge.gitbooks.io/reeborg-s-world-advanced-world-creation/content/">https://aroberge.gitbooks.io/reeborg-s-world-advanced-world-creation/content/</a><span> </span>是《Reeborg的世界：教師指南》的線上書籍，旨在幫助教師利用 Reeborg 的世界（一個用於學習編程的平台）創建編程任務。作者 André Roberge 假設讀者具備 Python 或 JavaScript 的編程基礎，並主要使用 Python 範例進行講解。書籍介紹如何使用 Reeborg 的進階 API 設計更具挑戰性的世界，適合已熟悉基本界面並希望深入探索的教師。內容從基礎世界編輯開始，逐步加快 pace，並建議讀者在網站上運行範例以理解動態效果。後半部分提供簡要說明及附錄，包括範例世界列表。作者鼓勵教師分享自創世界，並提到自己是物理學背景，編程為自學愛好，Reeborg 的發展始於 2004 年的 RUR-PLE 項目。書籍免費線上提供，旨在促進編程教育。</p>
 <p>以下是《Reeborg 的世界：教師指南》各章節的概要內容：</p>
 <p>簡介 (Introduction)</p>
